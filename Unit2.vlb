@@ -1,7 +1,4 @@
-﻿[Button1]
-Coordinates=100,10,53,51
-
-[MainMenu1]
+﻿[MainMenu1]
 Coordinates=177,1,81,36
 
 [FileMenu]
@@ -18,7 +15,7 @@ Coordinates=177,56,89,36
 Coordinates=196,111,67,36
 
 []
-Coordinates=99,80,53,51
+Coordinates=100,10,53,51
 
 [Sort]
 Coordinates=99,80,75,33
