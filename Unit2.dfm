@@ -1,7 +1,7 @@
 object Form2: TForm2
   Left = 0
   Top = 0
-  Caption = 'Form2'
+  Caption = #1058#1072#1073#1083#1080#1094#1072
   ClientHeight = 570
   ClientWidth = 978
   Color = clBtnFace
@@ -48,14 +48,14 @@ object Form2: TForm2
   object Button1: TButton
     Left = 176
     Top = 16
-    Width = 75
+    Width = 97
     Height = 25
-    Caption = #1044#1086#1073#1072#1074#1080#1090#1100
+    Caption = #1044#1086#1073#1072#1074#1080#1090#1100' '#1087#1086#1089#1083#1077
     TabOrder = 2
     OnClick = Button1Click
   end
   object Button2: TButton
-    Left = 264
+    Left = 296
     Top = 16
     Width = 75
     Height = 25
@@ -103,6 +103,10 @@ object Form2: TForm2
     object N3: TMenuItem
       Caption = #1055#1077#1088#1077#1081#1090#1080' '#1082' '#1087#1086#1080#1089#1082#1091
       OnClick = N3Click
+    end
+    object N4: TMenuItem
+      Caption = #1053#1072' '#1075#1083#1072#1074#1085#1091#1102
+      OnClick = N4Click
     end
   end
   object OpenDialog1: TOpenDialog

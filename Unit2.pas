@@ -24,6 +24,7 @@ type
     Button1: TButton;
     Button2: TButton;
     Button3: TButton;
+    N4: TMenuItem;
 
     procedure Button1Click(Sender: TObject);
     procedure OpenFileClick(Sender: TObject);
@@ -35,6 +36,7 @@ type
     procedure SaveAsClick(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
+    procedure N4Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -47,29 +49,33 @@ var
 
 implementation
 
-uses Unit3, strutils, types;
+uses Unit3, strutils, types, Unit1;
 
 {$R *.dfm}
 
 procedure TForm2.Button2Click(Sender: TObject);
 var
-  s : string;
   index : integer;
   i, c : byte;
 begin
   if TryStrToInt(Edit1.Text, index) then
     begin
-      c := index - 1;
-      if index = StringGrid1.RowCount then
-        StringGrid1.Rows[index].Clear
-          else
-        for I := index to StringGrid1.RowCount - 1 do
-          begin
-            StringGrid1.Rows[i] := StringGrid1.Rows[i + 1];
-            c := c + 1;
-            StringGrid1.Cells[0, i] := IntToStr(c);
-          end;
-      StringGrid1.RowCount := StringGrid1.RowCount - 1;
+      if (index > 0) and (index <= StringGrid1.RowCount) then
+        begin
+          c := index - 1;
+          if index = StringGrid1.RowCount then
+            StringGrid1.Rows[index].Clear
+              else
+            for I := index to StringGrid1.RowCount - 1 do
+              begin
+                StringGrid1.Rows[i] := StringGrid1.Rows[i + 1];
+                c := c + 1;
+                StringGrid1.Cells[0, i] := IntToStr(c);
+              end;
+          StringGrid1.RowCount := StringGrid1.RowCount - 1;
+        end
+        else
+        ShowMessage('Вы ввели неккоректное число');
     end
     else
     ShowMessage('Введите число');
@@ -86,25 +92,29 @@ procedure TForm2.Button1Click(Sender: TObject);
 var
   index, t : integer;
   i : byte;
-  c : boolean;
 begin
   if TryStrToInt(Edit1.Text, index) then
     begin
-      if index = StringGrid1.RowCount then
+      if (index >= 0) and (index <= StringGrid1.RowCount) then
         begin
+          if index = StringGrid1.RowCount then
+            begin
+              StringGrid1.RowCount := StringGrid1.RowCount + 1;
+              StringGrid1.Cells[0, index + 1] := IntToStr(index + 1);
+            end;
           StringGrid1.RowCount := StringGrid1.RowCount + 1;
-          StringGrid1.Cells[0, index + 1] := IntToStr(index + 1);
-        end;
-      StringGrid1.RowCount := StringGrid1.RowCount + 1;
-      t := StringGrid1.RowCount;
-      for I := StringGrid1.RowCount downto index + 2 do
-        begin
-          StringGrid1.Rows[i] := StringGrid1.Rows[i - 1];
-          StringGrid1.Cells[0, i] := IntToStr(t);
-          t := t - 1;
-        end;
-      StringGrid1.Rows[index + 1].Clear;
-      StringGrid1.Cells[0, index + 1] := IntToStr(t);
+          t := StringGrid1.RowCount;
+          for I := StringGrid1.RowCount downto index + 2 do
+            begin
+              StringGrid1.Rows[i] := StringGrid1.Rows[i - 1];
+              StringGrid1.Cells[0, i] := IntToStr(t);
+              t := t - 1;
+            end;
+          StringGrid1.Rows[index + 1].Clear;
+          StringGrid1.Cells[0, index + 1] := IntToStr(t);
+        end
+        else
+        ShowMessage('Вы ввели неккоректное число');
     end
     else
     ShowMessage('Введите число');
@@ -156,7 +166,7 @@ begin
                         cells[j, k + 1] := s[j];
                       end;
                     inc(k);
-                  until (cells[5, k] < cells[5, k + 1]) or (k = StringGrid1.RowCount - 1);
+                  until (Trim(cells[5, k]) < Trim(cells[5, k + 1])) or (k = StringGrid1.RowCount - 1);
                   if i > 1 then dec(i);
                   end
                   else
@@ -213,6 +223,12 @@ begin
  form3.Show
 end;
 
+procedure TForm2.N4Click(Sender: TObject);
+begin
+  Form1.Show;
+  Form2.Close;
+end;
+
 procedure TForm2.OpenFileClick(Sender: TObject);
 var
   i, j, k, l : byte;
@@ -221,6 +237,8 @@ var
   a : TStringDynArray;
 begin
   OpenDialog1.Execute;
+  if OpenDialog1.FileName <> '' then
+    begin
   st := TStringList.Create;
   st.LoadFromFile(OpenDialog1.FileName);
   a := SplitString(st.Text, '\');
@@ -242,6 +260,7 @@ begin
     end;
   StringGrid1.RowCount := StringGrid1.RowCount - 1;
   st.Free;
+    end;
 end;
 
 
@@ -259,8 +278,11 @@ begin
 
     end;
     SaveDialog1.Execute;
-    st.SaveToFile(SaveDialog1.FileName + '.txt');
-    st.Free;
+    if SaveDialog1.FileName <> '' then
+        begin
+          st.SaveToFile(SaveDialog1.FileName + '.txt');
+          st.Free;
+        end;
 end;
 
 procedure TForm2.SaveClick(Sender: TObject);
