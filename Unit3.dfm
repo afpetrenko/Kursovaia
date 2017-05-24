@@ -14,9 +14,35 @@ object Form3: TForm3
   OnCreate = FormCreate
   PixelsPerInch = 96
   TextHeight = 13
+  object Label1: TLabel
+    Left = 384
+    Top = 70
+    Width = 189
+    Height = 16
+    Caption = #1056#1077#1079#1091#1083#1100#1090#1072#1090#1099' '#1087#1086#1080#1089#1082#1072' '#1087#1086' '#1085#1072#1075#1088#1072#1076#1072#1084
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 384
+    Top = 70
+    Width = 206
+    Height = 16
+    Caption = #1056#1077#1079#1091#1083#1100#1090#1072#1090#1099' '#1087#1086#1080#1089#1082#1072' '#1087#1086' '#1088#1077#1078#1080#1089#1089#1105#1088#1072#1084
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
   object StringGrid2: TStringGrid
     Left = 16
-    Top = 128
+    Top = 104
     Width = 945
     Height = 329
     ColCount = 8
@@ -32,47 +58,31 @@ object Form3: TForm3
       140
       109)
   end
-  object Button1: TButton
-    Left = 160
-    Top = 43
-    Width = 75
-    Height = 25
-    Caption = #1053#1072#1081#1090#1080
-    TabOrder = 1
-    OnClick = Button1Click
-  end
-  object Button2: TButton
-    Left = 160
-    Top = 88
-    Width = 75
-    Height = 25
-    Caption = #1053#1072#1081#1090#1080
-    TabOrder = 2
-    OnClick = Button2Click
-  end
-  object Edit1: TEdit
-    Left = 16
-    Top = 45
-    Width = 121
-    Height = 21
-    TabOrder = 3
-    Text = #1055#1086#1080#1089#1082' '#1087#1086' '#1085#1072#1075#1088#1072#1076#1072#1084
-  end
-  object Edit2: TEdit
-    Left = 16
-    Top = 90
-    Width = 121
-    Height = 21
-    TabOrder = 4
-    Text = #1055#1086#1080#1089#1082' '#1087#1086' '#1088#1077#1078#1078#1080#1089#1105#1088#1091
-  end
   object ComboBox1: TComboBox
-    Left = 504
-    Top = 45
+    Left = 16
+    Top = 24
     Width = 145
     Height = 21
-    TabOrder = 5
-    Text = 'ComboBox1'
+    TabOrder = 1
+    Text = #1055#1086#1080#1089#1082' '#1087#1086' '#1085#1072#1075#1088#1072#1076#1072#1084
     OnSelect = ComboBox1Select
+  end
+  object ComboBox2: TComboBox
+    Left = 16
+    Top = 69
+    Width = 145
+    Height = 21
+    TabOrder = 2
+    Text = #1055#1086#1080#1089#1082' '#1087#1086' '#1088#1077#1078#1080#1089#1105#1088#1072#1084
+    OnSelect = ComboBox2Select
+  end
+  object Button1: TButton
+    Left = 936
+    Top = 73
+    Width = 25
+    Height = 25
+    Caption = 'X'
+    TabOrder = 3
+    OnClick = Button1Click
   end
 end
