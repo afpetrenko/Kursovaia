@@ -95,7 +95,7 @@ var
 begin
   if TryStrToInt(Edit1.Text, index) then
     begin
-      if (index >= 0) and (index <= StringGrid1.RowCount) then
+      if (index >= 0) and (index < StringGrid1.RowCount) then
         begin
           if index = StringGrid1.RowCount then
             begin
@@ -118,6 +118,7 @@ begin
     end
     else
     ShowMessage('¬ведите число');
+    StringGrid1.Cells[5, index + 1] := ' ';
 end;
 
 procedure TForm2.FormCreate(Sender: TObject);
@@ -144,6 +145,7 @@ type
 var
   i, j, k : byte;
   s : str;
+  t, t1 : string;
 begin
   i := 1;
   with StringGrid1 do
@@ -152,7 +154,9 @@ begin
         begin
           if Cells[5, i] <> '' then
             begin
-              if Cells[5, i] > Cells[5, i + 1] then
+              t := StringGrid1.Cells[5, i];
+              t1 := StringGrid1.Cells[5, i + 1];
+              if StrToInt(t) > StrToInt(t1) then
                 begin
                   for j := 1 to 7 do
                     begin
@@ -166,7 +170,7 @@ begin
                         cells[j, k + 1] := s[j];
                       end;
                     inc(k);
-                  until (Trim(cells[5, k]) < Trim(cells[5, k + 1])) or (k = StringGrid1.RowCount - 1);
+                  until (cells[5, k] < cells[5, k + 1]) or (k = StringGrid1.RowCount - 1);
                   if i > 1 then dec(i);
                   end
                   else
@@ -183,6 +187,7 @@ procedure TForm2.N2Click(Sender: TObject);
 type
   str = array[1..7] of string;
 var
+  t, t1 : string;
   i, j, k : byte;
   s : str;
 begin
@@ -193,7 +198,9 @@ begin
         begin
           if Cells[5, i] <> '' then
             begin
-              if Cells[5, i] < Cells[5, i + 1] then
+              t := StringGrid1.Cells[5, i];
+              t1 := StringGrid1.Cells[5, i + 1];
+              if StrToInt(t) < StrToInt(t1) then
                 begin
                   for j := 1 to 7 do
                     begin

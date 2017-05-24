@@ -66,4 +66,13 @@ object Form3: TForm3
     TabOrder = 4
     Text = #1055#1086#1080#1089#1082' '#1087#1086' '#1088#1077#1078#1078#1080#1089#1105#1088#1091
   end
+  object ComboBox1: TComboBox
+    Left = 504
+    Top = 45
+    Width = 145
+    Height = 21
+    TabOrder = 5
+    Text = 'ComboBox1'
+    OnSelect = ComboBox1Select
+  end
 end
