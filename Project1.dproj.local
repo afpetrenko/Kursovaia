@@ -1,21 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
-    <Transaction>1899.12.30 00:00:00.000.137,=d:\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.016,=D:\Documents\Embarcadero\Studio\Projects\GroupedItems1.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.011,=d:\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.587,=D:\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.389,d:\Documents\Embarcadero\Studio\Projects\Project1.dproj=d:\Documents\Embarcadero\Studio\Projects\[[[\Project1.dproj</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.441,=d:\Documents\Embarcadero\Studio\Projects\ServerContainerUnit1.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.013,=d:\Documents\Embarcadero\Studio\Projects\[[[\Unit2.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.428,=C:\Users\Александр\Documents\GitHub\test\Unit4.pas</Transaction>
     <Transaction>1899.12.30 00:00:00.000.419,=C:\Users\Александр\Documents\GitHub\test\Unit3.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.652,=D:\Documents\Embarcadero\Studio\Projects\ItemDetail1.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.631,d:\Documents\Embarcadero\Studio\Projects\Unit1.dfm=d:\Documents\Embarcadero\Studio\Projects\[[[\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.671,C:\Users\Александр\Documents\GitHub\test\Unit3.pas=C:\Users\Александр\Documents\GitHub\test\finder.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.970,C:\Users\Александр\Documents\GitHub\test\Unit2.pas=C:\Users\Александр\Documents\GitHub\test\table.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.970,C:\Users\Александр\Documents\GitHub\test\Unit2.dfm=C:\Users\Александр\Documents\GitHub\test\table.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.356,C:\Users\Александр\Documents\GitHub\test\Fiinder.dfm=C:\Users\Александр\Documents\GitHub\test\Finder.dfm</Transaction>
     <Transaction>1899.12.30 00:00:00.000.254,=d:\Documents\Embarcadero\Studio\Projects\ServerMethodsUnit1.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.631,d:\Documents\Embarcadero\Studio\Projects\Unit1.pas=d:\Documents\Embarcadero\Studio\Projects\[[[\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.016,=D:\Documents\Embarcadero\Studio\Projects\GroupedItems1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.441,=d:\Documents\Embarcadero\Studio\Projects\ServerContainerUnit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.631,d:\Documents\Embarcadero\Studio\Projects\[[[\Unit1.dfm=d:\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.389,d:\Documents\Embarcadero\Studio\Projects\[[[\Project1.dproj=d:\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.428,=C:\Users\Александр\Documents\GitHub\test\Unit4.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.013,=d:\Documents\Embarcadero\Studio\Projects\[[[\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.742,C:\Users\Александр\Documents\GitHub\test\finder.pas=C:\Users\Александр\Documents\GitHub\test\Fiinder.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.652,=D:\Documents\Embarcadero\Studio\Projects\ItemDetail1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.498,C:\Users\Александр\Documents\GitHub\test\Unit1.pas=C:\Users\Александр\Documents\GitHub\test\main.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.742,C:\Users\Александр\Documents\GitHub\test\finder.dfm=C:\Users\Александр\Documents\GitHub\test\Fiinder.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.631,d:\Documents\Embarcadero\Studio\Projects\[[[\Unit1.pas=d:\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.498,C:\Users\Александр\Documents\GitHub\test\Unit1.dfm=C:\Users\Александр\Documents\GitHub\test\main.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.356,C:\Users\Александр\Documents\GitHub\test\Fiinder.pas=C:\Users\Александр\Documents\GitHub\test\Finder.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.011,=d:\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.137,=d:\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.804,=D:\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.671,C:\Users\Александр\Documents\GitHub\test\Unit3.dfm=C:\Users\Александр\Documents\GitHub\test\finder.dfm</Transaction>
     <Transaction>1899.12.30 00:00:00.000.974,=D:\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>1899.12.30 00:00:00.000.399,=D:\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.804,=D:\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.587,=D:\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
   </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="main.pas"/>
+    <File Path="main.dfm"/>
+    <File Path="table.pas"/>
+    <File Path="table.dfm"/>
+    <File Path="Finder.pas"/>
+    <File Path="Finder.dfm"/>
+  </ProjectSortOrder>
 </BorlandProject>
